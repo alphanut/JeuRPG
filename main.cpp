@@ -14,9 +14,14 @@ int main()
 	david.boirePotionDeVie(20);
 	goliath.attaquer(david);
 	david.attaquer(goliath);
+	david.attaqueMagie(goliath);
 
 	goliath.changerArme("Double hache tranchante veneneuse de la mort", 40);
 	goliath.attaquer(david);
+	david.attaqueMagie(goliath);
+	goliath.attaquer(david);
+	david.rechargerMana(10);
+	david.attaqueMagie(goliath);
 
 	cout << endl << "Etat des personnages :" << endl;
 	cout << endl << "David" << endl;
