@@ -125,3 +125,8 @@ void Personnage::afficherEtat() const
 	cout << "Mana: " << m_mana << endl;
 	m_arme.afficher();
 }
+
+string Personnage::getNom() const
+{
+	return m_nom;
+}

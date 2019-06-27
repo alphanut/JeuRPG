@@ -30,6 +30,7 @@ public:
 	bool estVivant() const;
 	bool possedeMagie() const;
 	void afficherEtat() const;
+	std::string getNom() const;
 };
 
 #endif // !PERSONNAGE_H_INCLUDED
