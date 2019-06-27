@@ -8,17 +8,18 @@ using namespace std;
 
 int main()
 {
-	Personnage david("David"), goliath("Goliath", "Epée éguisée", 20);
+	Personnage david("David"), goliath("Goliath", "Epee eguisee", 20);
 
 	goliath.attaquer(david);
 	david.boirePotionDeVie(20);
 	goliath.attaquer(david);
 	david.attaquer(goliath);
 
-	goliath.changerArme("Double hache tranchante vénéneuse de la mort", 40);
+	goliath.changerArme("Double hache tranchante veneneuse de la mort", 40);
 	goliath.attaquer(david);
 
-	cout << "David" << endl;
+	cout << endl << "Etat des personnages :" << endl;
+	cout << endl << "David" << endl;
 	david.afficherEtat();
 	cout << endl << "Goliath" << endl;
 	goliath.afficherEtat();
